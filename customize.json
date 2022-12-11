@@ -2,9 +2,10 @@
   "greeting": "嗨",
   "name": "唐瑶",
   "greetingText": "又到了这一天",
-  "videoPath": "img/129.mp4",
+  "wishText": "唐瑶，生日快乐！",
+  "imagePath": "img/code.png",
   "text1": "还是同样的配方",
-  "textInChatBox": "三十岁生日 礼物应该送什么？",
+  "textInChatBox": "三十岁生日礼物应该送什么？",
   "sendButtonLabel": "百度一下",
   "text2": "但今年是不一样的味道",
   "text3": "日思夜想，秀发飘零\n突出一个左右斟酌不定",
@@ -19,5 +20,5 @@
   "smiley": ":)",
   "bigTextPart1": "霍格沃兹·斯特莱林学院",
   "bigTextPart2": "德拉科·马尔福",
-  "wishHeading": "Happy Birthday!"
+  "wishHeading": "微信扫一扫"
 }
