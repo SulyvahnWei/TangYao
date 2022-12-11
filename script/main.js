@@ -8,7 +8,7 @@ const fetchData = () => {
         let dataArr = Object.keys(data);
       dataArr.map(customData => {
         if (data[customData] !== "") {
-          if (customData === "videoPath") {
+          if (customData === "imagePath") {
             document
               .querySelector(`[data-node-name*="${customData}"]`)
               .setAttribute("src", data[customData]);
@@ -219,7 +219,7 @@ const animationTimeline = () => {
       0.2
     )
     .from(
-      ".video",
+      ".lydia-dp",
       0.5,
       {
         scale: 3.5,
@@ -230,6 +230,12 @@ const animationTimeline = () => {
       },
       "-=2"
     )
+    .from(".hat", 0.5, {
+      x: -100,
+      y: 350,
+      rotation: -180,
+      opacity: 0
+    })
     .staggerFrom(
       ".wish-hbd span",
       0.7,
@@ -259,7 +265,28 @@ const animationTimeline = () => {
       0.1,
       "party"
     )
-
+    .from(
+      ".wish h5",
+      0.5,
+      {
+        opacity: 0,
+        y: 10,
+        skewX: "-15deg"
+      },
+      "party"
+    )
+    .staggerTo(
+      ".eight svg",
+      1.5,
+      {
+        visibility: "visible",
+        opacity: 0,
+        scale: 80,
+        repeat: 3,
+        repeatDelay: 1.4
+      },
+      0.3
+    )
 
 
   // tl.seek("currentStep");
